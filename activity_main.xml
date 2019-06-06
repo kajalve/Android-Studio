@@ -7,29 +7,37 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/fname"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter First Name"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/lname"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Last Name"
-        android:inputType="text" />
-
     <Button
-        android:id="@+id/submit"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:id="@+id/mu"
+        android:text="Maa"
+        android:textStyle="italic"
+        android:textColor="#800080"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bh"
+        android:text="Bhai"
+        android:textStyle="italic"
+        android:textColor="#FF0000"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/un"
+        android:text="uncle"
+        android:textStyle="italic"
+        android:textColor="#008000"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sh"
+        android:text="Di"
+        android:textStyle="italic"
+        android:textColor="#000080"
+        />
 
-    <TextView
-        android:id="@+id/fullname"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="full name" />
 </LinearLayout>

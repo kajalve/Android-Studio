@@ -1,45 +1,70 @@
-package com.example.sample;
+package com.example.phone;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-
 
 public class MainActivity extends AppCompatActivity {
-    EditText fname, lname;
-    Button submit;
-    TextView fullname;
+    Button mu,bh,sh,un;
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.activity_main);
+          findViewById(R.id.mu).setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  dialContactPhone("9682436011");
+              }
+              private void dialContactPhone(String s) {
+                  startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel",s,null)));
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        fname = (EditText) findViewById(R.id.fname);
-        lname = (EditText) findViewById(R.id.lname);
-        submit = (Button) findViewById(R.id.submit);
-        fullname = (TextView) findViewById(R.id.fullname);
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String fname1 = fname.getText().toString();
-                String lname1 = lname.getText().toString();
-                if(TextUtils.isEmpty(fname1))
-                {
-                    fname.setError("Enter First name");
-                }
-                else if(TextUtils.isEmpty(lname1))
-                    {
-                    lname.setError("Enter Last Name");
-                    }
-                    else
-                {
-                fullname.setText(fname1 + " " + lname1);
-                }
-        }
-    });
-}
-}
+              }
+              {
+          findViewById(R.id.bh).setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  dialContactPhone("8299052741");
+              }
+              private void dialContactPhone(String s) {
+                  startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", s, null)));
+              }
+              {
+          findViewById(R.id.un).setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  dialContactPhone("9454570239");
+              }
+              private void dialContactPhone(String s) {
+                  startActivity(new Intent(Intent.ACTION_DIAL,Uri.fromParts("tel",s,null)));
+              }
+              {
+          findViewById(R.id.sh).setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  dialContactPhone("6388369814");
+              }
+              private void dialContactPhone(String s){
+                  startActivity(new Intent(Intent.ACTION_DIAL,Uri.fromParts("tel",s,null)));
+              }
+          });
+              }
+          });
+              }
+          });
+              }
+
+          });
+
+
+
+      }
+
+
+
+
+
+
+    }
