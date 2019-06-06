@@ -7,37 +7,54 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <EditText
+        android:id="@+id/no1"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:hint="Enter First No"
+        android:inputType="number"
+        />
+    <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mu"
-        android:text="Maa"
-        android:textStyle="italic"
-        android:textColor="#800080"
+        android:id="@+id/no2"
+        android:inputType="number"
+        android:hint="Enter Second No"
         />
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/bh"
-        android:text="Bhai"
-        android:textStyle="italic"
-        android:textColor="#FF0000"
+        android:id="@+id/add"
+        android:text="Addition"
         />
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/un"
-        android:text="uncle"
-        android:textStyle="italic"
-        android:textColor="#008000"
+        android:id="@+id/sub"
+        android:text="sub"
         />
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sh"
-        android:text="Di"
-        android:textStyle="italic"
-        android:textColor="#000080"
+        android:id="@+id/div"
+        android:text="divide"
         />
-
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addno"
+        android:text="addtion"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subno"
+        android:text="Substraction"
+        />
+       <TextView
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/divno"
+           android:text="divide"
+           />
 </LinearLayout>
